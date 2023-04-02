@@ -69,4 +69,119 @@
     flex-direction: column;
     position: absolute;
   }
+
+
+  /* ==================== */
+
+  /* styles for screens smaller than 768px */
+@media (max-width: 767px) {
+    .navbar .container {
+      padding: 0px 20px;
+      height: 60px;
+    }
+    
+    .navbar .container .left img {
+      height: 20px;
+      margin-right: 20px;
+      /* display: none; */
+    }
+    
+    .navbar .container .left span {
+      margin-right: 12px;
+      font-size: 12px;
+      /* color: red; */
+      display: none;
+    }
+    
+    .navbar .container .right .icon {
+      margin: 0px 10px;
+    }
+    
+    .navbar .container .right img {
+      width: 25px;
+      height: 25px;
+    }
+    
+    .navbar .container .right .profile span {
+      padding: 12px;
+      font-size: 12px;
+    }
+    
+    .navbar .container .right .profile .options {
+      border-radius: 3px;
+    }
+  }
+  
+  /* styles for screens between 768px and 992px */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .navbar .container {
+      padding: 0px 30px;
+    }
+    
+    .navbar .container .left img {
+      height: 20px;
+      margin-right: 20px;
+    }
+    
+    .navbar .container .left span {
+      margin-right: 10px;
+      font-size: 12px;
+    }
+    
+    .navbar .container .right .icon {
+      margin: 0px 10px;
+    }
+    
+    .navbar .container .right img {
+      width: 25px;
+      height: 25px;
+    }
+    
+    .navbar .container .right .profile span {
+      padding: 5px;
+      font-size: 12px;
+    }
+    
+    .navbar .container .right .profile .options {
+      border-radius: 3px;
+    }
+  }
+  
+  /* styles for screens larger than 992px */
+  @media (min-width: 992px) {
+    .navbar .container {
+      padding: 0px 50px;
+      height: 70px;
+    }
+    
+    .navbar .container .left img {
+      height: 25px;
+      margin-right: 40px;
+    }
+    
+    .navbar .container .left span {
+      margin-right: 20px;
+      font-size: 14px;
+    }
+    
+    .navbar .container .right .icon {
+      margin: 0px 15px;
+    }
+    
+    .navbar .container .right img {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+    }
+    
+    .navbar .container .right .profile span {
+      padding: 10px;
+      font-size: 14px;
+    }
+    
+    .navbar .container .right .profile .options {
+      border-radius: 5px;
+    }
+  }
+  
   

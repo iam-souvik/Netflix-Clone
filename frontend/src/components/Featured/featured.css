@@ -1,0 +1,225 @@
+.featured {
+    height: 90vh;
+    position: relative;
+  }
+  
+  .featured .category {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .featured .category select {
+    cursor: pointer;
+    background-color: var(--main-color);
+    border: 1px solid white;
+    color: white;
+    margin-left: 20px;
+    padding: 5px;
+  }
+  
+  .featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .featured .info {
+    width: 35%;
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .featured .info img {
+    width: 400px;
+  }
+  
+  .featured .info .desc {
+    margin: 20px 0px;
+  }
+  
+  .featured .info .buttons {
+    display: flex;
+  }
+  
+  .featured .info .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .featured .info .buttons button.play {
+    background-color: white;
+    color: var(--main-color);
+  }
+  
+  .featured .info .buttons button.more {
+    background-color: gray;
+    color: white;
+  }
+  
+  .featured .info .buttons button span {
+    margin-left: 5px;
+  }
+
+
+
+  /* =================== */
+
+  
+
+  /* For screens smaller than 768px */
+@media (max-width: 767px) {
+    .navbar .container {
+      padding: 0px 20px;
+    }
+    
+    .navbar .container .left img {
+      height: 20px;
+      margin-right: 20px;
+    }
+    
+    .navbar .container .left span {
+      font-size: 12px;
+      margin-right: 10px;
+    }
+    
+    .navbar .container .right .icon {
+      margin: 0px 10px;
+    }
+    
+    .navbar .container .right img {
+      width: 25px;
+      height: 25px;
+    }
+    
+    .featured {
+      height: auto;
+      padding-top: 70px;
+    }
+    
+    .featured .category {
+      top: 60px;
+      left: 20px;
+      font-size: 20px;
+    }
+    
+    .featured .category select {
+      margin-left: 10px;
+      padding: 3px;
+      font-size: 12px;
+    }
+    
+    .featured .info {
+      width: 80%;
+      left: 20px;
+      bottom: 30px;
+    }
+    
+    .featured .info img {
+      width: 100%;
+    }
+    
+    .featured .info .buttons button {
+      padding: 5px 10px;
+      font-size: 14px;
+      margin-right: 5px;
+    }
+    
+    .featured .info .buttons button span {
+      margin-left: 3px;
+    }
+  }
+  
+  /* For screens between 768px and 1023px */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .navbar .container {
+      padding: 0px 30px;
+    }
+    
+    .navbar .container .left img {
+      height: 20px;
+      margin-right: 20px;
+    }
+    
+    .navbar .container .left span {
+      font-size: 12px;
+      margin-right: 10px;
+    }
+    
+    .navbar .container .right .icon {
+      margin: 0px 10px;
+    }
+    
+    .navbar .container .right img {
+      width: 25px;
+      height: 25px;
+    }
+    
+    .featured {
+      height: 70vh;
+      padding-top: 70px;
+    }
+    
+    .featured .category {
+      top: 60px;
+      left: 30px;
+      font-size: 25px;
+    }
+    
+    .featured .category select {
+      margin-left: 10px;
+      padding: 5px;
+      font-size: 14px;
+    }
+    
+    .featured .info {
+      width: 50%;
+      left: 30px;
+      bottom: 50px;
+    }
+    
+    .featured .info img {
+      width: 100%;
+    }
+    
+    .featured .info .desc {
+      margin: 10px 0px;
+    }
+    
+    .featured .info .buttons button {
+      padding: 8px 15px;
+      font-size: 16px;
+      margin-right: 8px;
+    }
+    
+    .featured .info .buttons button span {
+      margin-left: 3px;
+    }
+  }
+  
+  /* For screens larger than 1023px */
+  @media (min-width: 1024px) {
+    .navbar .container {
+      padding: 0px 50px;
+    }
+    
+   
+}
+  
