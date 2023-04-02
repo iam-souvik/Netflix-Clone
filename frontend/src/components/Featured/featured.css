@@ -49,7 +49,12 @@
   
   .featured .info .buttons {
     display: flex;
+
   }
+  /* .buttons{
+    display: flex;
+    gap: -10px;
+  } */
   
   .featured .info .buttons button {
     padding: 10px 20px;
