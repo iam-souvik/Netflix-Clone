@@ -7,8 +7,13 @@ const dotenv = require("dotenv")
 dotenv.config();
 
 
-// mOngodb Connect 
+// import All routes 
+const AuthRoutre = require("./routes/auth")
+const UserRoute = require("./routes/users")
 
+
+
+// mOngodb Connect 
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -19,7 +24,13 @@ mongoose.connect(process.env.MONGO_URL, {
         console.error(err);
     });
 
+
+
 app.use(express.json());
+
+//use All Route
+app.use("/",AuthRoutre)
+app.use("/",UserRoute)
 
 
 
